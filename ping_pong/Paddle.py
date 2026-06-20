@@ -32,7 +32,7 @@ class Paddle1:
                     self.paddle.ycor() + 50 > ball.ball.ycor() > self.paddle.ycor() - 50):
                 # ball.ball.sety(180)
                 ball.bounce_x()
-
+# Edit asked by the Dr.Ahmed
             elif (10 < ball.ball.xcor() < -10) and (
                     self.paddle.ycor() + 50 > ball.ball.ycor() > self.paddle.ycor() - 50):
                 # ball.ball.sety(-180)

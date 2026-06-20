@@ -44,12 +44,12 @@ def Border_check(ball, Score_A, Score_B):
 def Collision(ball, paddle_a, paddle_b):
     # Paddle and ball collision
     if (350 > ball.ball.xcor() > 340) and (
-            paddle_b.paddle.ycor() + 50 > ball.ball.ycor() > paddle_b.paddle.ycor() - 50):
+            paddle_b.paddle.ycor() + 50 > ball.ball.ycor() > paddle_b.paddle.ycor() - 50) and ball.ball.dx > 0:
        # ball.ball.setx(340)
         ball.bounce_x()
 
     if (-350 < ball.ball.xcor() < -340) and (
-            paddle_a.paddle.ycor() + 50 > ball.ball.ycor() > paddle_a.paddle.ycor() - 50):
+            paddle_a.paddle.ycor() + 50 > ball.ball.ycor() > paddle_a.paddle.ycor() - 50)and ball.ball.dx < 0:
         #ball.ball.setx(-340)
         ball.bounce_x()
 

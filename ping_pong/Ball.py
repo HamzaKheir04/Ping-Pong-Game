@@ -10,8 +10,8 @@ class Ball:
         # self.x =random.randint(-390,390)
         # self.y = random.randint(-290,290)
         self.ball.goto(0, 0)
-        self.ball.dx = 0.1 # Ball movement speed in x direction
-        self.ball.dy = 0.1  # Ball movement speed in y direction
+        self.ball.dx = 1  # Ball movement speed in x direction
+        self.ball.dy = 1  # Ball movement speed in y direction
 
     def move(self):
         self.ball.setx(self.ball.xcor() + self.ball.dx)
